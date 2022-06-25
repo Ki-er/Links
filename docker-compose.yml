@@ -17,10 +17,10 @@ services:
       - AVATAR_URL=
       - AVATAR_2X_URL=
       - AVATAR_ALT=Kieran Robson Profile Pic
-      - NAME=TechnoTim
+      - NAME=Kieran Robson
       - BIO=Open Source List contributor | Tech Nerd | Self Hosting Noob | Discord Bot Developer
       - FOOTER=Thanks for stopping by!
-      - BUTTON_ORDER=
+      - BUTTON_ORDER=GITHUB,DISCORD,TWITTER,SPORIFY,LETTERBOXD,TRAKT,LASTFM,STEAM
       - GITHUB=https://github.com/timothystewart6
       - DISCORD=https://l.technotim.live/discord
       - TWITTER=https://twitter.com/TechnoTimLive
