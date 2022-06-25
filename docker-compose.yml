@@ -1,15 +1,10 @@
----
-# this is used for local development and testing
 version: "3.0"
 services:
-  little-link:
+  littlelink-server:
     image: ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
-    #image: timothystewart6/littlelink-server:latest
+    # image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
-    build:
-      context: ./
-      dockerfile: Dockerfile
     environment:
       - META_TITLE=Kieran Robson
       - META_DESCRIPTION=Kieran Robson Link page
