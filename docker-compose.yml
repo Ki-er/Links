@@ -1,0 +1,41 @@
+---
+# this is used for local development and testing
+version: "3.0"
+services:
+  little-link:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    #image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - META_TITLE=Kieran Robson
+      - META_DESCRIPTION=Kieran Robson Link page
+      - META_AUTHOR=Kieran Robson
+      - META_KEYWORDS=HomeLab, CSS, HTML, Engineering
+      - LANG=en
+      - META_INDEX_STATUS=all
+      - THEME=Dark
+      - FAVICON_URL=
+      - AVATAR_URL=
+      - AVATAR_2X_URL=
+      - AVATAR_ALT=Kieran Robson Profile Pic
+      - NAME=TechnoTim
+      - BIO=Open Source List contributor | Tech Nerd | Self Hosting Noob | Discord Bot Developer
+      - FOOTER=Thanks for stopping by!
+      - BUTTON_ORDER=
+      - GITHUB=https://github.com/timothystewart6
+      - DISCORD=https://l.technotim.live/discord
+      - TWITTER=https://twitter.com/TechnoTimLive
+      - SPOTIFY=https://www.spotify.com/
+      - STEAM=https://steamcommunity.com/
+      - LETTERBOXD=https://letterboxd.com/
+      - TRAKT=https://trakt.tv
+      - LASTFM=https://last.fm/
+    ports:
+      - 8080:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
