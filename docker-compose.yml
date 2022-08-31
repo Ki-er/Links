@@ -16,19 +16,18 @@ services:
       - FAVICON_URL=
       - AVATAR_URL=
       - AVATAR_2X_URL=
-      - AVATAR_ALT=Kieran Robson Profile Pic
       - NAME=Kieran Robson
       - BIO=Open Source List contributor | Tech Nerd | Self Hosting Noob | Discord Bot Developer
       - FOOTER=Thanks for stopping by!
       - BUTTON_ORDER=GITHUB,DISCORD,TWITTER,SPORIFY,LETTERBOXD,TRAKT,LASTFM,STEAM
-      - GITHUB=https://github.com/timothystewart6
-      - DISCORD=https://l.technotim.live/discord
-      - TWITTER=https://twitter.com/TechnoTimLive
-      - SPOTIFY=https://www.spotify.com/
-      - STEAM=https://steamcommunity.com/
-      - LETTERBOXD=https://letterboxd.com/
-      - TRAKT=https://trakt.tv
-      - LASTFM=https://last.fm/
+      - GITHUB=https://github.com/KieranRobson
+      - DISCORD=https://discord.gg/QvrG4xPGKZ
+      - TWITTER=https://twitter.com/Kieranr27
+      - SPOTIFY=https://open.spotify.com/user/r10ocx4jtipe2wcc77xb9pvu3
+      - STEAM=https://steamcommunity.com/id/R0BB0568
+      - LETTERBOXD=https://letterboxd.com/kieranr27/
+      - TRAKT=https://trakt.tv/users/kieranr27
+      - LASTFM=https://last.fm/user/kieranr27/
     ports:
       - 8080:3000
     restart: unless-stopped
